@@ -1,0 +1,289 @@
+@import './normalize';
+@import './container';
+@import './typography';
+@import './variables';
+@import './mixins';
+
+body{
+    font-family: 'Gilroy';
+
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    // z-index: 9999;
+    .navigation{
+        padding: 20px 0;
+        width: 100%;
+        border-bottom: #070707 1px solid;
+        ul{
+            @include dflex(space-between);
+            li{
+                a{
+                    align-items: center;
+                    color: #828282;
+                    font-family: 'Gilroy';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: normal;
+                    &:hover{
+                        color: var(--Black, #070707);
+                        font-family: 'Gilroy';
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: bold;
+                        line-height: normal;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+        }
+    }
+}
+main{
+    padding-top: 130px;
+    .hero{
+        width: 100%;
+        padding-bottom: 104px;
+        &__top{
+            @include dflex(space-between ,end);
+            h1{
+                color: var(--Black, #070707);
+                font-family: 'Gilroy';
+                font-size: 47.339px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+                width: 123px;
+            }
+            p{
+                color: var(--Black, #070707);
+                font-size: 18px;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            div{
+                // z-index: -1;
+                padding-top: 45px;
+                transform: rotate(270deg);
+                color: #828282;
+                font-family: 'Gilroy';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+                strong{
+                    color: #000;
+                    font-family: 'Gilroy';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: normal;
+                }
+    
+            }
+        }
+        &__bottom{
+            @include dflex;
+            overflow: hidden;
+            padding-top: 50px;
+        }
+    }
+    #about{
+        width: 100%;
+        background: #F6F6F6;
+        .aboutus{
+            padding: 110px 215px;
+            @include dflex;
+            flex-direction: column;
+            text-align: center;
+            h1{
+                color: var(--Black, #070707);
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 34px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+                padding-bottom: 18px;
+            }
+            p{
+                color: var(--Black, #070707);
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    #skill{
+        width: 100%;
+        @include dflex;
+        flex-direction: column;
+        h1{
+            padding-top: 91px;
+            padding-bottom: 69px;
+            color: var(--Black, #070707);
+            text-align: center;
+            font-family: 'Gilroy';
+            font-size: 34px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+        }
+        p{
+            color: var(--Black, #070707);
+            text-align: center;
+            font-family: 'Gilroy';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .apps{
+            padding-top: 83px;
+            width: 100%;
+            @include dflex (space-between);
+            padding-bottom: 110px;
+            div{
+                text-align: center;
+                @include dflex;
+                flex-direction: column;
+                p{
+                    width: 79.329px;
+                    height: 27px;
+                    padding-top: 23px;
+                    padding-bottom: 41px;
+                    @include dflex;
+                    align-items: center;
+                    color: #828282;
+                    text-align: center;
+                    font-family: 'Gilroy';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: normal;
+                }
+            }
+        }
+    
+    }
+    #portfolio{
+        width: 100%;
+        background-color: #F6F6F6;
+        .portfolio{
+            overflow: hidden;
+            width: 100%;
+            @include dflex;
+            flex-direction: column;
+            padding-bottom: 76px;
+            h1{
+                padding-top: 47px;
+                color: var(--Black, #070707);
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 34px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+            }
+            .woman{
+                padding-top: 47px;
+                padding-bottom: 25px;
+            }
+            .reebok{
+                padding-top: 99px;
+                padding-bottom: 25px;
+            }
+            .braun{
+                padding-top: 99px;
+                padding-bottom: 25px;
+            }
+            a{
+                padding: 20px;
+                color: var(--Black, #070707);
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration-line: underline;
+            }
+    
+        }
+    }
+}
+footer{
+    width: 100%;
+    .contacts{
+        @include dflex;
+        flex-direction: column;
+        &__top{
+            @include dflex;
+            flex-direction: column;
+            h1{
+                padding-top: 114px;
+                color: var(--Black, #070707);
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 34px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+            }
+            p{
+                width: 275.142px;
+                padding: 25px 0px;
+                color: var(--Black, #070707);
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            button{
+                cursor: pointer;
+                padding: 10px 30px;
+                background-color: #070707;
+                border-radius: 80px;
+                border: none;
+                color: #FFF;
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+            }
+        }
+        &__bottom{
+            @include dflex;
+            flex-direction: column;
+            div{
+                padding-top: 85px;
+                display: flex;
+                gap: 61px;
+            }
+            p{
+                padding-top: 46px;
+                padding-bottom: 123px;
+                color: #828282;
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}

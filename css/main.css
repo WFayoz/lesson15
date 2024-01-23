@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  list-style-position: outside;
+}
+
+.container {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Bold.woff2") format("woff2"), url("../assets/fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Light.woff2") format("woff2"), url("../assets/fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Heavy.woff2") format("woff2"), url("../assets/fonts/Gilroy-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Medium.woff2") format("woff2"), url("../assets/fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Regular.woff2") format("woff2"), url("../assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Gilroy";
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+header .navigation {
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: #070707 1px solid;
+}
+header .navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navigation ul li a {
+  align-items: center;
+  color: #828282;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+header .navigation ul li a:hover {
+  color: var(--Black, #070707);
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  transition: 0.3s;
+}
+
+main {
+  padding-top: 130px;
+}
+main .hero {
+  width: 100%;
+  padding-bottom: 104px;
+}
+main .hero__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+main .hero__top h1 {
+  color: var(--Black, #070707);
+  font-family: "Gilroy";
+  font-size: 47.339px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  width: 123px;
+}
+main .hero__top p {
+  color: var(--Black, #070707);
+  font-size: 18px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .hero__top div {
+  padding-top: 45px;
+  transform: rotate(270deg);
+  color: #828282;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+main .hero__top div strong {
+  color: #000;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+main .hero__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 50px;
+}
+main #about {
+  width: 100%;
+  background: #F6F6F6;
+}
+main #about .aboutus {
+  padding: 110px 215px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main #about .aboutus h1 {
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  padding-bottom: 18px;
+}
+main #about .aboutus p {
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main #skill {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #skill h1 {
+  padding-top: 91px;
+  padding-bottom: 69px;
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+main #skill p {
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main #skill .apps {
+  padding-top: 83px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 110px;
+}
+main #skill .apps div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #skill .apps div p {
+  width: 79.329px;
+  height: 27px;
+  padding-top: 23px;
+  padding-bottom: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  color: #828282;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+main #portfolio {
+  width: 100%;
+  background-color: #F6F6F6;
+}
+main #portfolio .portfolio {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 76px;
+}
+main #portfolio .portfolio h1 {
+  padding-top: 47px;
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+main #portfolio .portfolio .woman {
+  padding-top: 47px;
+  padding-bottom: 25px;
+}
+main #portfolio .portfolio .reebok {
+  padding-top: 99px;
+  padding-bottom: 25px;
+}
+main #portfolio .portfolio .braun {
+  padding-top: 99px;
+  padding-bottom: 25px;
+}
+main #portfolio .portfolio a {
+  padding: 20px;
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+footer {
+  width: 100%;
+}
+footer .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .contacts__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .contacts__top h1 {
+  padding-top: 114px;
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+footer .contacts__top p {
+  width: 275.142px;
+  padding: 25px 0px;
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .contacts__top button {
+  cursor: pointer;
+  padding: 10px 30px;
+  background-color: #070707;
+  border-radius: 80px;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+footer .contacts__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .contacts__bottom div {
+  padding-top: 85px;
+  display: flex;
+  gap: 61px;
+}
+footer .contacts__bottom p {
+  padding-top: 46px;
+  padding-bottom: 123px;
+  color: #828282;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=main.css.map */
