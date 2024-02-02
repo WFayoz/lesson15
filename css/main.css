@@ -145,15 +145,19 @@ main .hero__bottom {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   overflow: hidden;
-  padding-top: 50px;
+  margin-top: 50px;
+  background-image: url(../assets/images/label.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 350px;
 }
 main #about {
   width: 100%;
   background: #F6F6F6;
 }
 main #about .aboutus {
-  padding: 110px 215px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,16 +266,25 @@ main #portfolio .portfolio h1 {
   line-height: normal;
 }
 main #portfolio .portfolio .woman {
-  padding-top: 47px;
-  padding-bottom: 25px;
+  width: 100%;
+  padding-top: 520px;
+  background-image: url(../assets/images/woman.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 main #portfolio .portfolio .reebok {
-  padding-top: 99px;
-  padding-bottom: 25px;
+  width: 100%;
+  padding-top: 520px;
+  background-image: url(../assets/images/reebok.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 main #portfolio .portfolio .braun {
-  padding-top: 99px;
-  padding-bottom: 25px;
+  width: 100%;
+  padding-top: 520px;
+  background-image: url(../assets/images/braun.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 main #portfolio .portfolio a {
   padding: 20px;
@@ -356,6 +369,54 @@ footer .contacts__bottom p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 695px) {
+  header {
+    width: 0;
+    height: 0;
+  }
+  .navigation {
+    width: fit-content;
+    padding: 20px 0;
+    visibility: hidden;
+  }
+  main .hero {
+    padding-bottom: 50px;
+  }
+  main .hero .hero__top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  main .hero .hero__top div {
+    display: none;
+  }
+  main .hero .hero__bottom {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  #skill h1 {
+    padding-top: 83px;
+  }
+  #skill p {
+    padding-top: 50px;
+    color: #000;
+    text-align: center;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #skill .apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

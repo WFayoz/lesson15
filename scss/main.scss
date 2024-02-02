@@ -90,15 +90,20 @@ main{
         }
         &__bottom{
             @include dflex;
+            width: 100%;
             overflow: hidden;
-            padding-top: 50px;
+            margin-top: 50px;
+            background-image: url(../assets/images/label.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-top: 350px;
         }
     }
     #about{
         width: 100%;
         background: #F6F6F6;
         .aboutus{
-            padding: 110px 215px;
+            // padding: 110px 215px;
             @include dflex;
             flex-direction: column;
             text-align: center;
@@ -195,16 +200,25 @@ main{
                 line-height: normal;
             }
             .woman{
-                padding-top: 47px;
-                padding-bottom: 25px;
+                width: 100%;
+                padding-top: 520px;
+                background-image: url(../assets/images/woman.png);
+                background-size: contain;
+                background-repeat: no-repeat;
             }
             .reebok{
-                padding-top: 99px;
-                padding-bottom: 25px;
+                width: 100%;
+                padding-top: 520px;
+                background-image: url(../assets/images/reebok.png);
+                background-size: contain;
+                background-repeat: no-repeat;
             }
             .braun{
-                padding-top: 99px;
-                padding-bottom: 25px;
+                width: 100%;
+                padding-top: 520px;
+                background-image: url(../assets/images/braun.png);
+                background-size: contain;
+                background-repeat: no-repeat;
             }
             a{
                 padding: 20px;
@@ -286,4 +300,63 @@ footer{
             }
         }
     }
+}
+@media (max-width:695px){
+    header{
+        width: 0;
+        height: 0;
+    }
+    .navigation{
+        width: fit-content;
+        padding: 20px 0;
+        visibility: hidden;
+        ul{
+        }
+    }
+    main{
+        .hero{
+            padding-bottom: 50px;
+            .hero__top{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                div{
+                    display: none;
+                }
+            }
+            .hero__bottom{
+                display: flex;
+                padding-bottom: 50px;
+            }
+        }
+    }
+    #skill{
+        h1{
+            padding-top: 83px;
+        }
+        p{
+            padding-top: 50px;
+            color: #000;
+            text-align: center;
+            font-family: 'Gilroy';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .apps{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+        }
+
+    }
+    .portfolio{
+        .woman{
+        }
+    }
+
 }
